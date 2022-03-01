@@ -6,7 +6,12 @@ let b=255
 function preload(){
   song = loadSound('the space between our minds.mp3')}
 
+function mousePressed() {
+  userStartAudio();
+}
+
 function setup() {
+  getAudioContext().suspend();
   createCanvas(windowWidth, windowHeight)
   noStroke()
   song.setVolume(0.1)
