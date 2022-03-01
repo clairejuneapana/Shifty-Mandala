@@ -19,7 +19,7 @@ function setup() {
   song.loop()
   osc= new p5.Oscillator();
   osc.setType('sine')
-  osc.amp(0.02)
+  osc.amp(0.002)
   osc.start()
   
 }
